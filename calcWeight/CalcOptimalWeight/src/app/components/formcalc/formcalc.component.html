@@ -1,0 +1,26 @@
+<h2>Optimal Weight calculator</h2>
+<div class="container">
+    <form>
+      <p>
+        <label>Age: </label>
+        <input type="number" class="form-control" name="age" [(ngModel)]="person.age" />
+        <label> year(s)</label>
+      </p>
+  
+      <p>
+        <label>Height: </label>
+        <input type="number" name="height" [(ngModel)]="person.height" />
+        <label> cm</label>
+      </p> 
+  
+      <p>
+        <label>Weight: </label>
+        <input type="number" name="weight" [(ngModel)]="person.weight" />
+        <label> kg</label>
+      </p>
+  
+      <p>
+        <button type="submit" (click)="onCheckWeight()">Check!</button>
+      </p>
+    </form>
+  </div>

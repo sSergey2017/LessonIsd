@@ -1,0 +1,16 @@
+<h2>History</h2>
+<button (click)="getHistory()">GetHistory!</button>
+<table>
+    <tr>
+        <th>Weight</th>
+        <th>Height</th>
+        <th>Age</th>
+        <th>Status </th>
+    </tr>
+    <tr *ngFor="let people of peoples">
+        <td>{{people.weight}}</td>
+        <td>{{people.height}}</td>
+        <td>{{people.age}}</td>
+        <td>{{people.optimalWeight}}</td>
+    </tr>
+</table>

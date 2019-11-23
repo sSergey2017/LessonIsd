@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angularcli-vscode-debug": {
+    "CalcOptimalWeight": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angularcli-vscode-debug",
+            "outputPath": "dist/CalcOptimalWeight",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angularcli-vscode-debug:build"
+            "browserTarget": "CalcOptimalWeight:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angularcli-vscode-debug:build:production"
+              "browserTarget": "CalcOptimalWeight:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angularcli-vscode-debug:build"
+            "browserTarget": "CalcOptimalWeight:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angularcli-vscode-debug:serve"
+            "devServerTarget": "CalcOptimalWeight:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angularcli-vscode-debug:serve:production"
+              "devServerTarget": "CalcOptimalWeight:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angularcli-vscode-debug"
+  "defaultProject": "CalcOptimalWeight"
 }
